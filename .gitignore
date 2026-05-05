@@ -1,0 +1,40 @@
+.env
+.env.*
+!.env.example
+.pumpportal_key
+node_modules/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.log
+.DS_Store
+npm-debug.log*
+backup_*/
+_*.cjs
+
+ARCHITECTURE.md
+
+# Local analysis artifacts — machine-specific, not part of the bot
+__pycache__/
+*.pyc
+backtest/
+reports/
+models/
+backtest_*.py
+backtest_*.cjs
+backtest_summary.json
+dashboard/
+
+# Ad-hoc scripts with embedded credentials — never commit
+test_migration_with_key.js
+close_all.js
+backup_trenches_pause.js
+
+# Generated render/media outputs
+artifacts/
+output/
+
+# Ad-hoc manual scripts
+test_render.js
+test_simple_ws.js
